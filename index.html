@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba técnica</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <script type="text/javascript" src="form.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Registro de vehículos</h1>
+        </div>
+        <form action='#' method="get" id="formulario" name="formulario">
+            <div class="form-control" id="control-usuario">
+                <label for="user">User Id:</label>
+                <input type="text" id="user" name="usuario" placeholder="42">
+                <small id="userError">el campo está vacío o contiene letras</small>
+            </div>
+            <div class="form-control" id="control-email">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="facturas_dom@gmail.com">
+                <small id="emailError">el campo está vacío o la estructura de email no es correcta</small>
+            </div>
+            <div class="form-control" id="control-cliente">
+                <label for="cliente">Cliente Id:</label>
+                <input type="text" id="cliente" name="cliente" placeholder="35">
+                <small id="clienteError">el campo está vacío o contiene letras</small>
+            </div>
+            <div class="form-control" id="control-info">
+                <label for="nombre">Información:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Juan">
+                <small id="infoError">el campo está vacío</small>
+            </div>
+            <div class="form-control" id="control-edad">
+                <label for="edad">Edad:</label>
+                <input type="text" id="edad" name="edad" placeholder="42">
+                <small id="edadError">el campo está vacío, contiene letras o eres menor de edad</small>
+            </div>
+            <div class="tipo">
+                <p class="tipo">Tipo de vehículo:</p>
+                <div class="form-control auto" id="control-tipo">
+                    <label for="vehiculo1">Coche</label>
+                    <input type="radio" id="vehiculo1" name="vehiculo" value="coche">
+                    <label for="vehiculo2">Furgoneta</label>
+                    <input type="radio" id="vehiculo2" name="vehiculo" value="furgoneta">
+                    <small id="tipoError">debes seleccionar una opción</small>   
+                </div>           
+            </div>
+            <div class="form-control" id="control-modelo">
+                <label for="modelo">Nombre del Vehículo:</label>
+                <input type="text" id="modelo" name="modelo" placeholder="Honda Civic">
+                <small id="modeloError">el campo está vacío</small>    
+            </div>
+            <div class="form-control" id="control-precio">
+                <label for="precio">Precio:</label>
+                <input type="text" id="precio" name="precio" placeholder="125">
+                <small id="precioError">el campo está vacío o contiene letras</small>
+            </div>
+            <div class="form-control" id="control-imagen">
+                <label for="imagen">Imagen:</label>
+                <input type="file" id="file" name="file[]" multiple/> <!-- la subida de archivos ya sería desde php-->
+                <small id='imagenError'>el campo está vacío</small>
+            </div>
+            <button type="submit" class="btn_enviar">Registrar</button>
+                
+        </form>
+    </div>      
+</body> 
+</html>
